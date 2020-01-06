@@ -101,6 +101,7 @@ npm-debug.log
 ### 运行镜像
 
 ```shell script
-docker build -t <your username>/node-web-app .
-docker run -p 49160:8080 -d <your username>/node-web-app
+npm install
+docker build -t <your username>/nodejs-docker .
+docker run -p 49160:8080 -d <your username>/nodejs-docker
 ```

@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+  app1:
+    image: <your username>/nodejs-docker
+    hostname: app1
+    ports:
+      - 8081:8080
+    volumes:
+      -
+    environment:
+      - TZ=Asia/Shanghai
+
+  app2:
+    image: <your username>/nodejs-docker
+    hostname: app2
+    ports:
+      - 8082:8080
+    volumes:
+      -
+    environment:
+      - TZ=Asia/Shanghai

@@ -98,10 +98,23 @@ node_modules
 npm-debug.log
 ```
 
-### 运行镜像
+### 生成镜像
 
 ```shell script
 npm install
 docker build -t <your username>/nodejs-docker .
+```
+
+### 运行镜像
+
+- 创建 `stack.yml` 文件
+
+```yaml
+
+```
+
+- docker-compose
+
+```shell script
 docker run -p 49160:8080 -d <your username>/nodejs-docker
 ```
